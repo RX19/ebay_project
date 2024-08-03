@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.barra-navegacion {
+    width: 100%;
+    background-color: #202020;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-navegacion ul li {
+    margin: 0 15px;
+}
+
+.barra-navegacion ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.titulo-ofertas {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.seccion-ofertas {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.oferta-destacada, .ofertas-tendencia {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.item-oferta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-oferta img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.detalles-oferta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.descuento {
+    color: #ff4c4c;
+}
+
+.renovado {
+    color: #3cba54;
+    font-weight: bold;
+}
+
+.ver-todas-ofertas {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.ver-todas-ofertas:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #161515;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

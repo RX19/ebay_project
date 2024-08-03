@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header .comentarios {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.contenido-principal {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.productos-carrito {
+    width: 70%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.detalles-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detalles-producto h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.opciones a, .acciones a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.opciones {
+    font-size: 0.9rem;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cantidad input {
+    width: 40px;
+    text-align: center;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.precio .envio {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.renovado {
+    color: #3cba54;
+    font-weight: bold;
+}
+
+.resumen-carrito {
+    width: 30%;
+    max-width: 400px;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resumen p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.subtotal {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.checkout {
+    display: block;
+    background-color: #00aaff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.recompensas a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.explorar-articulos-relacionados {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.explorar-articulos-relacionados h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.articulos-relacionados {
+    display: flex;
+    gap: 10px;
+}
+
+.articulos-relacionados img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #161515;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .detalles-producto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .resumen-carrito {
+        width: 100%;
+    }
+}
