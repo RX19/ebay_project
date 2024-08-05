@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a191c;
+    color: #333;
+    padding: 20px;
+}
+/*Alineaciones */
+.margintop{
+    margin-top: 60px;
+}
+.alineadoizqtxt{
+    text-align: left;
+}
+.alineadoizq{
+    float: left;
+}
+.inline{
+    display: inline;
+}
+.width{
+    
+    box-sizing: border-box; 
+    padding: 4px; 
+    margin-top: 0px;
+    border-radius: 30px;
+}
+
+
+/*TEXTOS */
+h1, h2,p,strong{
+    color: #ffffff;
+    
+}
+h2 {
+    font-size: 24px;
+}
+.letrapequeña{
+    font-size: 10px;
+    text-align: left;
+}
+.letrapequeña1{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.letrapequeña2{
+    font-size: 15px;
+}
+.iniciarsesion{
+    
+    display: flex;
+    margin-left: 25rem;
+    font-size: 20px;
+    text-align: end;
+    text-align: right;
+}
+.address1{
+    margin-left: 30px;
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+.address2{
+    margin-left: 30px;
+}
+.addresstexto{
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*DIVS*/
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+.divcrearcuenta{
+    width: 400px;
+    margin: 0 auto; 
+    background-color: #1a191c;
+    text-align: center;
+}
+.divcuentas{
+    border:1px solid rgb(109, 101, 101);
+    border-radius: 30px;
+    height: 40px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.titulo{
+    margin-left: 40rem;
+}
+.divaddressmain{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.divaddress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #1a191c;
+    margin-top: 10px;
+}
+.divaddressinfo {
+    max-width: 70%;
+}
+
+/*Inputs*/
+.botones1{
+    width: 49%;
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-top: 15px;
+    border-radius: 10px;
+    border:1px solid rgb(109, 101, 101);
+}
+.botones2{
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-top: 15px;
+    border-radius: 10px;
+    border:1px solid rgb(109, 101, 101);
+}
+.botontipocuenta{
+    margin-top: 6px;
+    margin-left: 5px;
+    width: 47%;
+    border:0px solid rgb(109, 101, 101);
+    background-color: #1a191c;
+    color: #ffffff;
+}
+.botonsubmit{
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-top: 15px;
+    border-radius: 30px;
+    border:0px; 
+    background-color: rgb(13, 70, 161);
+    color: #ffffff;
+
+}
+.botonaddress {
+    background-color: #1a191c;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*CUSTOMIZABLES*/
+
+.fondo{
+    background-color: #1a191c;
+    color: #ffffff;
+}
+.SS{
+    text-decoration: none;
+}
+.azul{
+    color: rgb(79, 146, 255);
+}
+
+
+/*EBAY*/
+#logo{
+    display: flex;
+    height: 55%;
+    width: 11%;
+    margin-left: 2.5%;
+    margin-top: 1.3%;
+}
+#logo > img {
+    height: 100%;
+    width: 100%;
+}
