@@ -3,8 +3,8 @@ const oracledb = require('oracledb');
 // Configuración de la base de datos
 const dbConfig = {
   user: 'C##EBAY',
-  password: 'EBAY',
-  connectString: 'localhost:1521/ORCLDB', 
+  password: 'ebay',
+  connectString: 'localhost:1521/ORCLCDB', 
 };
 
 async function openConnection() {
