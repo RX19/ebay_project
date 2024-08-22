@@ -7,7 +7,7 @@ import {methods as authentication} from "./controllers/authentication.controller
 
 //server 
 const app= express();
-app.set("port",4000);
+app.set("port",3000);
 app.listen(app.get("port"));
 console.log("servidor corriendo en puerto",app.get("port"));
 
