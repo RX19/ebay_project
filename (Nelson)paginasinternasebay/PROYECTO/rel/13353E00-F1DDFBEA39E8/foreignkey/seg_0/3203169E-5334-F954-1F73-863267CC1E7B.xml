@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3203169E-5334-F954-1F73-863267CC1E7B" containerWithKeyObject="D8DC2EB0-32CD-2D35-6E47-012216EA64B5" localFKIndex="52E262B4-6232-50DF-2A1E-CF2C9A1031C1" name="TBL_ANUNCIOS_TBL_PUBLICIDAD_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:22:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<referredTableLongName>TBL_PUBLICIDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1662400-1E21-24D6-04E6-982271D8C872</referredTableID>
+<keyObject>31AAEC34-C9EC-4407-FB71-E42586688007</keyObject>
+<referredKeyID>31AAEC34-C9EC-4407-FB71-E42586688007</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PUBLICIDAD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

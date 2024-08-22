@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="" >
+    </div>
+
+    <div class="titulo">
+        <h1 class="iniciarsesion">¿Ya tienes una cuenta?&nbsp; <a href="index.html" class="fondo SS"> Inicia sesión</a> </h1>
+    </div>
+
+
+
+    <main class="maindiv">
+
+        <div>
+            <img src="images\personal.jpg" alt="Imagen personal" >
+        </div>
+
+        <div class="divcrearcuenta">
+            
+            <h1 class="alineadoizqtxt">Crear una cuenta</h1>
+
+            <div class="divcuentas">
+                <button class="width botontipocuenta">Personal</button>
+                
+                <button class="width botontipocuenta"><a href="comercial.html" class="fondo SS">Comercial</a></button>
+            </div>
+        
+            <form action="/submit" method="post">
+                <input class="inline alineadoizq botones1 fondo" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input class=" botones1 fondo" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <input class="alineadoizq botones2 fondo" type="email" id="email" name="email" placeholder="Correo" required><br><br>
+                <input class="alineadoizq botones2 fondo" type="text" id="contraseña" name="contraseña" placeholder="Contraseña" required><br><br>
+                <p class="letrapequeña margintop">Al seleccionar <strong>Crear una cuenta personal</strong>, aceptas nuestras condiciones de uso y admites haber leido nuestro
+                Aviso de privacidad</p>
+        
+                <input class="botonsubmit" type="submit" value="Crear una cuenta personal">
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F5AB052-45E9-A9D4-78A7-D699AE07C4D6" name="TBL_TICKETS_SOPORTE">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:17:13 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TICKET_ID" id="32E14DCA-006B-29BE-45D3-C69810158629">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="B906D27A-AB80-07F2-2789-EBB067F39BEB">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:54:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FEFF98A-6393-9771-9978-90074DD89A84" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="ASUNTO" id="52EE4AD4-1C05-D78B-D056-C00F442F9B3B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MENSAJE" id="A7F90124-7429-EBAD-F27B-1B774A38F720">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="B71AC922-6D11-AFD0-DC65-D44F922D6620">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_TICKET" id="B918A110-924F-5020-FC4F-6673B18B3F62">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63A4421A-2EAD-D3F5-EBA4-6BF0F75AECBA" name="TBL_TICKETS_SOPORTE_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:01:24 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32E14DCA-006B-29BE-45D3-C69810158629"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="851428EB-F97E-E3FF-A06F-D27B50DF709D" name="TBL_TICKETS_SOPORTE_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:54:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B906D27A-AB80-07F2-2789-EBB067F39BEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C20E54C1-35CA-E5F4-A474-931B5C5F12CA" name="TBL_CONFIGURACION_USUARIO">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:18:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONFIGURACION_ID" id="56E85201-24DE-43C7-E40F-76786D86DA36">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:06:49 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="9DD8E2DA-61E7-9F4E-609C-4D8B94816B28">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:11:22 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E47E374-2D09-18BD-0A0A-9FEFDAC315FD" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="NOTIFICACIONES_EMAIL" id="1ACB2E92-41CD-9F25-2FB5-AC240BB90523">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:06:49 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTIFICACIONES_SMS" id="DFE358B6-AE91-A362-CDA3-75FAC746875E">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:06:49 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMA" id="3756D24A-0369-772C-0677-5A6E59B41CD4">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:06:49 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23EA0976-F83F-9B34-7EE1-C8FE1C3A9161" name="TBL_CONFIGURACION_USUARIO_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:06:49 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56E85201-24DE-43C7-E40F-76786D86DA36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1844B26-4315-974F-8E53-4976D5FE99BF" name="TBL_CONFIGURACION_USUARIO_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:11:22 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD8E2DA-61E7-9F4E-609C-4D8B94816B28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

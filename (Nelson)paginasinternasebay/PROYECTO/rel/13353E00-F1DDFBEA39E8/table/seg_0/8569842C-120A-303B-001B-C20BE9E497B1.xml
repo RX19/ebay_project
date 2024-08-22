@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8569842C-120A-303B-001B-C20BE9E497B1" name="TBL_RECOMENDACIONES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:18:25 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECOMENDACIONES_ID" id="8912856B-163A-8F1B-FBEA-CD6CF260F958">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:07:56 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="A9AF52B3-0D85-76BE-ECCA-E6837AB05353">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:13:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A301228-22EB-754A-4321-C0BBB2395CF7" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID" id="4B6552A0-759C-D6CC-4DEF-AB38F0D707C1">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:13:57 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1128375B-4E7E-7E81-D358-6B2F19557B34" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="FECHA_RECOMENDACION" id="2F63539F-6A19-7EF5-9A55-B33771AFAB00">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:07:56 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9631F3F6-60E7-A3D6-86D2-2025442EF04D" name="TBL_RECOMENDACIONES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:07:56 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8912856B-163A-8F1B-FBEA-CD6CF260F958"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42B1565B-467D-9E11-9DC6-D7CE70E84B2A" name="TBL_RECOMENDACIONES_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:13:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9AF52B3-0D85-76BE-ECCA-E6837AB05353"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A33F78AF-5B4F-8134-D300-9505FF5CDF2D" name="TBL_RECOMENDACIONES_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:13:57 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B6552A0-759C-D6CC-4DEF-AB38F0D707C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

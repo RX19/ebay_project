@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C190D84-22E0-4D7C-4371-5E87AD40CC28" name="TBL_PEDIDOS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 13:57:37 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PEDIDO_ID" id="D88AFDEE-23C2-C33E-C326-D10552EB9E2D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:42:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="7A8248DB-082D-7FED-DDB2-8CEF82769D7B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:30:51 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F172143E-C0B4-8315-F998-2312C8A134CD" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="FECHA_PEDIDO" id="2A38DA4F-CA05-5966-034E-2CFBFE0039D0">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:42:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="BF346EAC-6C75-AFCB-9E96-EE2B1F1574D8">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:42:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_PEDIDO" id="206196C3-476A-E7AD-B691-FFB9C2D1E499">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:42:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5482541B-816B-492D-D085-4F30963D19B8" name="TBL_PEDIDOS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:42:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D88AFDEE-23C2-C33E-C326-D10552EB9E2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E3236C0-06F3-63A7-D15C-148916C66991" name="TBL_PEDIDOS_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:30:51 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A8248DB-082D-7FED-DDB2-8CEF82769D7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14042102-2279-5C95-9B41-4DA3AF8B0784" name="TBL_REPUESTO_SOPORTE">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:12:48 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REPUESTO_ID" id="219B33E1-5390-B4CA-F321-C00F4C7B66F3">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:02:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TICKET_ID" id="96E680B5-3FC3-847C-D44A-ADD66DA0C36B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:02:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="768C5C80-4B58-1434-8EC2-78261415505B" referredColumn="32E14DCA-006B-29BE-45D3-C69810158629"/>
+</associations>
+</Column>
+<Column name="MESNAJE" id="AE9B182B-5E89-E307-A7AA-467E308C9B6F">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:02:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_RESPUESTA" id="133D701E-1D82-537D-7C81-E608F9A34CF0">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:02:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_USUARIOS_USUARIO_ID" id="E21E909A-2BEA-8DA7-995E-C5DA1FFE133E">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:04:42 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55C96C47-C887-99C0-1B71-48DAFC26686A" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C24525B-ED89-FCA9-7AB8-26FC2C271189" name="TBL_REPUESTO_SOPORTE_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:02:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="219B33E1-5390-B4CA-F321-C00F4C7B66F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10ECDE81-2052-B0D8-7AC1-0E92E7BAA9D0" name="TBL_REPUESTO_SOPORTE_TBL_TICKETS_SOPORTE_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:02:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E680B5-3FC3-847C-D44A-ADD66DA0C36B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA01E666-EB1A-02EC-1A83-7FE8AF43BC2D" name="TBL_REPUESTO_SOPORTE_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:04:42 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E21E909A-2BEA-8DA7-995E-C5DA1FFE133E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

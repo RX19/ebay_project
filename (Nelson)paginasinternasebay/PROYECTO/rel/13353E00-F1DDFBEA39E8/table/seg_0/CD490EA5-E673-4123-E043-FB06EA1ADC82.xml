@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD490EA5-E673-4123-E043-FB06EA1ADC82" name="TBL_CARRITO_ITEMS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:02:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CARRITO_ITEM_ID" id="A6D242E3-1A19-64AC-BAC3-2531B2BF3A97">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:52:26 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARRITO_ID" id="943B5C9E-FB08-46C8-83A2-0CC243BF1F61">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:41:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C766B677-19E2-22B3-6087-EAA7CB12FCC1" referredColumn="833FCD87-2CA8-1E09-ED64-B3DB5E5D4C0C"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID" id="26ECABAB-B1C8-B08F-F4F1-A8D97DC4C466">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:41:53 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="740D574B-F8D1-3DC0-4E74-D63A04702777" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="EB826F38-B823-D20D-0A10-CAC2D8AFEFD2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:52:26 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E924ACEA-48E6-7A1E-D6AB-30B73BA49A96" name="TBL_CARRITO_ITEMS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:52:26 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6D242E3-1A19-64AC-BAC3-2531B2BF3A97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C449071C-3234-A9FF-62D7-78F37E601ABE" name="TBL_CARRITO_ITEMS_TBL_CARRITO_COMPRAS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:41:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="943B5C9E-FB08-46C8-83A2-0CC243BF1F61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE19690A-FF42-FDFF-FD60-1E0DE3BA8AB1" name="TBL_CARRITO_ITEMS_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:41:53 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26ECABAB-B1C8-B08F-F4F1-A8D97DC4C466"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

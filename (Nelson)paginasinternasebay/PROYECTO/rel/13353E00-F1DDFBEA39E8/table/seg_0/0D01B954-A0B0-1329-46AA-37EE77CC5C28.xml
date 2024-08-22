@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D01B954-A0B0-1329-46AA-37EE77CC5C28" name="TBL_SUBASTAS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:01:15 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUBASTA_ID" id="72A53A38-D7EC-9600-2E19-E6D728F999FA">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID" id="3CEBBF74-D12A-BF28-BB81-834355BA722F">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:22:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B4B90E0-26CD-DF2A-169C-899CDA42D200" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="PRECIO_INICIAL" id="5489C7CA-5F02-33CF-E45C-12E7DC67794B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO_RESERVA" id="ACD0303E-A620-6778-1C65-CB6700518BC4">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="00C7469B-B2D0-031F-03E2-5625E71CEF52">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="71D77C2E-99CB-D58B-7E57-E085B1BCB376">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_SUBASTA" id="D9F6C420-61E3-138E-CCC8-B0253511ECAB">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E9A423D-10E6-599F-E75E-897FE4959118" name="TBL_SUBASTAS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:36:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72A53A38-D7EC-9600-2E19-E6D728F999FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5752D26-303C-0436-6F27-F6606E851412" name="TBL_SUBASTAS_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:22:18 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CEBBF74-D12A-BF28-BB81-834355BA722F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

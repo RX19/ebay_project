@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1662400-1E21-24D6-04E6-982271D8C872" name="TBL_PUBLICIDAD">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:19:27 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PUBLICIDAD_ID" id="7298A596-2DD9-4DED-8EF3-5424015B4015">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="AFD1F775-41B3-E2F3-29BF-11F48FC83510">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:19:22 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12D9406B-390D-D513-02D0-D4ABE2A4313B" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="NOMBRE_CAMPAÑA" id="9C574E9C-5D8C-568D-2409-2D91484F9B97">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRESUPUESTO" id="5EDC2F12-C88D-33CD-19A3-FD83C0118991">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="1EA14822-A8B1-4F54-C794-6551C0D2DEEC">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="42A3A77F-B9C3-588A-C9ED-19CF8434D22D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31AAEC34-C9EC-4407-FB71-E42586688007" name="TBL_PUBLICIDAD_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:10:35 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7298A596-2DD9-4DED-8EF3-5424015B4015"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B6E29B5-69F8-AA28-A17C-41720DEB5C83" name="TBL_PUBLICIDAD_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:19:22 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFD1F775-41B3-E2F3-29BF-11F48FC83510"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

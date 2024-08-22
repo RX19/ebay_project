@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="" >
+    </div>
+
+    <div class="titulo">
+        <h1 class="iniciarsesion">¿Ya tienes una cuenta?&nbsp; <a href="index.html" class="fondo SS">Inicia sesión</a> </h1>
+    </div>
+
+
+
+    <main class="maindiv">
+
+        <div>
+            <img src="images\comercial.jpg" alt="Imagen comercial" >
+        </div>
+
+        <div class="divcrearcuenta">
+            
+            <h1 class="alineadoizqtxt">Crear una cuenta</h1>
+
+            <div class="divcuentas">
+                <button class="width botontipocuenta"><a href="personal.html" class="fondo SS">Personal</a></button>
+                <button class="width botontipocuenta">Comercial</button>
+            </div>
+
+            <p class="letrapequeña1">Continúa registrándote como empresa u organización sin fines de lucro, o si planeas vender una gran cantidad de productos.</p>
+        
+            <form action="/submit" method="post">
+                <input class="alineadoizq botones2 fondo" type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa" required><br><br>
+                <input class="alineadoizq botones2 fondo" type="email" id="email" name="email" placeholder="Correo" required><br><br>
+                <input class="alineadoizq botones2 fondo" type="text" id="contraseña" name="contraseña" placeholder="Contraseña" required><br><br>
+                <input class="alineadoizq botones2 fondo" type="text" id="pais" name="pais" placeholder="¿Dónde está registrada tu empresa?" required><br><br>
+                <p class="letrapequeña alineadoizqtxt">Si tu empresa no está registrada, escribe tu país de residencia.</p>
+                <p class="letrapequeña margintop">Al seleccionar <strong>Crear una cuenta comercial</strong>, aceptas nuestras condiciones de uso y admites haber leido nuestro
+                Aviso de privacidad</p>
+        
+                <input class="botonsubmit" type="submit" value="Crear una cuenta comercial">
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

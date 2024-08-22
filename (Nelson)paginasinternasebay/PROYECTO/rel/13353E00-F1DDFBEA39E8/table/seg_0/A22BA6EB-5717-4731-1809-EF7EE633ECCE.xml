@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A22BA6EB-5717-4731-1809-EF7EE633ECCE" name="TBL_MENSAJES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 13:59:52 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MENSAJES_ID" id="89E20863-7288-069A-5092-0425C6CF453B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:48:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REMINENTE_ID" id="553A743C-7FED-BE06-6AED-2BC4608C99AD">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB373598-892D-CB32-87C6-506CF285BC0D" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="DESTINATARIO_ID" id="9B35480F-897D-E5BA-5E05-3DEC1103B385">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:59 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0899359-3E62-71C1-A243-96A8325045A8" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="TEXTO_MENSAJE" id="6E471AEC-A53E-99D3-EF98-D88A236FE2C2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:48:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MENSAJE" id="480F3CBA-D3FE-1639-E819-5664E17ADCDF">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:48:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_MENSAJE" id="5915A50B-B71E-142C-E3DB-E885E5BB5DB4">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:48:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBC5C169-1457-774D-5EB6-AF323CD9BA36" name="TBL_MENSAJES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:48:46 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89E20863-7288-069A-5092-0425C6CF453B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B669F47A-3B68-439F-346D-518372712BA5" name="TBL_MENSAJES_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="553A743C-7FED-BE06-6AED-2BC4608C99AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94C29EFD-69B0-E8CE-EFB8-25BF47803148" name="TBL_MENSAJES_TBL_USUARIOS_FKv2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:59 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B35480F-897D-E5BA-5E05-3DEC1103B385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

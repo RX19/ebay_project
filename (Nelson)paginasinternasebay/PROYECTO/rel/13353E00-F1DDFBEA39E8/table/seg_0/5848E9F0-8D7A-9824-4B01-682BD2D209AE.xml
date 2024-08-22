@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5848E9F0-8D7A-9824-4B01-682BD2D209AE" name="TBL_CUPONES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:16:15 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUPON_ID" id="3BE4AC4E-5BE5-F6BF-276C-1C1F3764C0FA">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="7AEB832A-14B7-6035-B641-E7C1BC305512">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCUENTO" id="654484EC-35A3-A59B-79F6-0EE966C8FE3D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_EXPIRACION" id="2F9316DF-49E5-9EF9-7D71-FA4AA4F99406">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USOS_RESTANTES" id="9572E9AC-355D-8C06-44A4-F2FB8D374775">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C7C0CAC-92B2-886D-AB50-965CDC965C79" name="TBL_CUPONES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:58:38 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BE4AC4E-5BE5-F6BF-276C-1C1F3764C0FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
