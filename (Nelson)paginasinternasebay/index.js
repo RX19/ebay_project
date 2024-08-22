@@ -15,10 +15,11 @@ console.log("servidor corriendo en puerto",app.get("port"));
 app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 
+
 //Rutas
-app.get("/index.html",(req,res)=>res.sendFile(__dirname + "/SesionRegistroAddress/index.html"));
-app.get("/personal.html",(req,res)=>res.sendFile(__dirname + "/SesionRegistroAddress/personal.html"));
-app.get("/comercial.html",(req,res)=>res.sendFile(__dirname + "/SesionRegistroAddress/comercial.html"));
-app.get("/landingpage.html",(req,res)=>res.sendFile(__dirname + "/SesionRegistroAddress/landingpage.html"));
+app.get("/index.html",(req,res)=>res.sendFile(__dirname + "public/index.html"));
+app.get("/personal.html",(req,res)=>res.sendFile(__dirname + "public/personal.html"));
+app.get("/comercial.html",(req,res)=>res.sendFile(__dirname + "public/comercial.html"));
+app.get("/landingpage.html",(req,res)=>res.sendFile(__dirname + "public/landingpage.html"));
 app.post("/api/login",authentication.login);
 app.post("/api/register",authentication.register);
