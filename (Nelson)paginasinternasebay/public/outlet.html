@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outlet de Marcas</title>
-    <link rel="stylesheet" href="assets/css/diseñooutlet.css">
+    <title>Productos</title>
+    <link rel="stylesheet" href="assets/css/diseñooutlet.css" href="/(Nelson)paginasinternasebay/public/styles.css">
+    <script src="/(Nelson)paginasinternasebay/controllers/cosas.js" defer></script>
+    <script src="/(Nelson)paginasinternasebay/controllers/sammyindex.js" defer></script>
+    <script src="/(Nelson)paginasinternasebay/controllers/cartservice.js" defer></script>
+   
+</head>
 </head>
 <body>
     <nav>
         <ul class="navegacion">
-            <li><a href="#">eBay</a></li>
-            <li>&gt;</li>
-            <li><a href="#">Outlet de Marcas</a></li>
+            <li><a href="index.html"><img src="/(Nelson)paginasinternasebay/public/images/ebaylogos.png" id="logo"></a></li>
+            <div class="menu-items">
+                <li><a href="#">MTB</a></li>
+                <li><a href="#">Ruta</a></li>
+                <li>
+                    <a href="/(Nelson)paginasinternasebay/public/carrito.html">
+                        <img src="/(Nelson)paginasinternasebay/public/images/carrito.png" alt="carrito de compras">
+                        <span id="cuenta-carrito">0</span>
+                    </a>
+                </li>
+            </div>
         </ul>
+    </nav>
     </nav>
 
     <div class="contenedor">
@@ -71,65 +85,8 @@
         </aside>
 
         <main>
-            <header>
-                <h1>Hasta un 60% de descuento en el Outlet de Marcas</h1>
-                <p>Encuentra grandes ofertas en las mejores marcas de moda, tecnología, hogar y más.</p>
-            </header>
-
-            <section class="nuevo-outlet-marcas">
-                <h2>Nuevas marcas en el Outlet</h2>
-                <div class="promocion">
-                    <img src="assets/images/abs.jpg" alt="ABS PC">
-                    <div class="texto-promocion">
-                        <h3>Presentamos ABS</h3>
-                        <p>Hasta un 25% de descuento en PCs para juegos y más de un vendedor autorizado.</p>
-                        <button>Comprar ahora</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="ofertas-gadgets">
-                <h2>Ofertas en los últimos gadgets</h2>
-                <div class="gadgets">
-                    <div class="gadget">
-                        <img src="assets/images/(aqui ponemos el nombre en que lo guadamos).jpg" alt="(foto)">
-                        <p>Hasta un 30% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 40% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 20% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 50% de descuento en (aca va nombre del producto), directamente de la marca</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 20% de descuento en (aca va nombre del producto), directamente de la marca</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 50% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 30% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 30% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                    <div class="gadget">
-                        <img src="assets/images/(...).jpg" alt="(foto)">
-                        <p>Hasta un 50% de descuento en (aca va nombre del producto), de un vendedor autorizado</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <section id="productos-container"></section> 
+        </main>        
     </div>
 
     <footer>
