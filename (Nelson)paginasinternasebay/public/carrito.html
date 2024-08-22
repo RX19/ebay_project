@@ -17,7 +17,7 @@
         <div class="contenido-principal">
             <div class="productos-carrito">
                 <div class="producto">
-                    <img src="imagen_producto1.png" alt="Imagen del Producto 1">
+                    <!-- Imagen eliminada -->
                     <div class="detalles-producto">
                         <h2>MSI Gaming RTX 4080 Super 16G Gaming X Slim 16GB GDDR6X Tarjeta Gráfica GPU</h2>
                         <p>Vendedor: cabreracollects (100% de feedback positivo)</p>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="producto">
-                    <img src="imagen_producto2.png" alt="Imagen del Producto 2">
+                    <!-- Imagen eliminada -->
                     <div class="detalles-producto">
                         <h2>PNY Geforce RTX 4080 SUPER 16GB Verto Overclocked Triple Fan DLSS 3</h2>
                         <p>Vendedor: Focus Camera (99.2% de feedback positivo)</p>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="producto">
-                    <img src="imagen_producto3.png" alt="Imagen del Producto 3">
+                    <!-- Imagen eliminada -->
                     <div class="detalles-producto">
                         <h2>Lenovo Legion Go Handheld 8.8" WQXGA AMD Ryzen Z1 Extreme 16GB 1TB SSD Wi-Fi</h2>
                         <p>Vendedor: BuyRefurbishedUS (97.7% de feedback positivo)</p>
@@ -99,10 +99,7 @@
         <section class="explorar-articulos-relacionados">
             <h2>Explorar artículos relacionados</h2>
             <div class="articulos-relacionados">
-                <img src="relacionado1.png" alt="Artículo relacionado 1">
-                <img src="relacionado2.png" alt="Artículo relacionado 2">
-                <img src="relacionado3.png" alt="Artículo relacionado 3">
-                <img src="relacionado4.png" alt="Artículo relacionado 4">
+                <!-- Imágenes eliminadas -->
             </div>
         </section>
     </div>
@@ -110,5 +107,103 @@
         <p>© eBayProyectoUNAH.</p>
     </footer> 
 
+    <script>
+        // Función para agregar un producto al carrito
+        function agregarProductoAlCarrito(productoId, cantidad) {
+            fetch('http://localhost:3005/api/carrito/agregar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    productoId: productoId,
+                    cantidad: cantidad,
+                    carritoId: 1  // Asume que el carritoId es 1, ajústalo según sea necesario
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert(data.mensaje);  // Muestra el mensaje de éxito en una alerta
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Función para eliminar un producto del carrito
+        function eliminarProductoDelCarrito(productoId) {
+            fetch('http://localhost:3005/api/carrito/eliminar', {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    productoId: productoId,
+                    carritoId: 1  // Asume que el carritoId es 1, ajústalo según sea necesario
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert(data.mensaje);  // Muestra el mensaje de éxito en una alerta
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Función para iniciar el proceso de pago
+        function iniciarPago() {
+            fetch('http://localhost:3005/api/carrito/pagar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    carritoId: 1,  // Asume que el carritoId es 1, ajústalo según sea necesario
+                    usuarioId: 1,  // Supón que el usuarioId es 1, ajústalo según sea necesario
+                    metodoPagoId: 1,  // Supón que el metodoPagoId es 1, ajústalo según sea necesario
+                    direccionEnvioId: 1  // Supón que la direccionEnvioId es 1, ajústalo según sea necesario
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert(data.mensaje);  // Muestra el mensaje de éxito en una alerta
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Asignar eventos a los elementos del DOM
+        document.getElementById('cantidad1').addEventListener('change', function() {
+            const cantidad = this.value;
+            agregarProductoAlCarrito(1, cantidad);  // Aquí, 1 es el ID del producto
+        });
+
+        document.getElementById('cantidad2').addEventListener('change', function() {
+            const cantidad = this.value;
+            agregarProductoAlCarrito(2, cantidad);  // Aquí, 2 es el ID del producto
+        });
+
+        document.getElementById('cantidad3').addEventListener('change', function() {
+            const cantidad = this.value;
+            agregarProductoAlCarrito(3, cantidad);  // Aquí, 3 es el ID del producto
+        });
+
+        document.querySelectorAll('.acciones a:last-child').forEach((button, index) => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                eliminarProductoDelCarrito(index + 1);  // Asume que el productoId es el índice + 1
+            });
+        });
+
+        document.querySelector('.checkout').addEventListener('click', function(event) {
+            event.preventDefault();
+            iniciarPago();
+        });
+    </script>
 </body>
 </html>
