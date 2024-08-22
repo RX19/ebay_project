@@ -10,7 +10,10 @@ productos.forEach(producto => {
     <p>Precio: $${producto.precio}</p>
     <button>Agregar al carrito</button>
   `;
+  const boton = document.createElement("button");
+  boton.textContent = "Agregar al carrito";
   contenedorTargetas.appendChild(nuevacosa);
+  nuevacosa.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto))
 }); 
 }
 
