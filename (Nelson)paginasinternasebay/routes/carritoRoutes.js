@@ -1,8 +1,7 @@
-// routes/carritoRoutes.js
 
 const express = require('express');
 const router = express.Router();
-const carritoController = require('./controllers/carritoController');
+const carritoController = require('../controllers/carritoController');
 
 // Ruta para agregar o actualizar productos en el carrito
 router.post('/agregar', carritoController.agregarProducto);
