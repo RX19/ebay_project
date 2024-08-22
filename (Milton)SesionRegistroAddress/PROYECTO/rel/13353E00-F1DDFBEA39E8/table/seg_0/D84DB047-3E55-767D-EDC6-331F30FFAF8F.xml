@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D84DB047-3E55-767D-EDC6-331F30FFAF8F" name="TBL_ENVIOS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:02:14 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENVIO_ID" id="C45475AA-BD1D-B9DF-B83F-CA93B20A1400">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PEDIDO_ID" id="36D69F63-1F0B-9705-1FE1-72230CAC25F8">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71292327-2286-06CB-D643-79A1E8A061ED" referredColumn="D88AFDEE-23C2-C33E-C326-D10552EB9E2D"/>
+</associations>
+</Column>
+<Column name="FECHA_ENVIO" id="75A8325F-9CAD-925D-427C-7BA85AF81CAC">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENTREGA" id="EDE5D91F-5B98-41CB-6CEE-FB2593F60F8D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION_ENTREGA" id="5B878CEC-9A03-F1DA-B423-380606495848">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="METODO_ENVIO" id="493D4876-6322-88F1-C865-63D199990E64">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_ENVIO" id="84F234CA-7D46-55AC-D220-6CD4DCE658A8">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7C3C1C0-909D-0DBE-600C-EA3328B9F83E" name="TBL_ENVIOS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:46:03 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C45475AA-BD1D-B9DF-B83F-CA93B20A1400"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B06155E-D034-105A-A007-7D2D6B0D0F84" name="TBL_ENVIOS_TBL_PEDIDOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:33:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36D69F63-1F0B-9705-1FE1-72230CAC25F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

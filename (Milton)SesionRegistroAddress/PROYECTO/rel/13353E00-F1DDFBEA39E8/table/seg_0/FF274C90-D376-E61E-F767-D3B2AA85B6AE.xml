@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF274C90-D376-E61E-F767-D3B2AA85B6AE" name="TBL_ESTADISTICAS_VENTA">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:12:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESTADISTICA_ID" id="CE223A98-8E99-FED3-A435-55C7B98A7D2A">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:57:11 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VENDEDOR_ID" id="EC4CC0A0-5206-ABAA-EAA9-6C2C61F2E647">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:50:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06858836-F81A-EFA4-3612-2AAB908FEDD6" referredColumn="AD678124-8BB0-BEA9-3317-0D8289EF20BB"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID" id="104B716C-7A91-C3E6-927D-2487B4E68AC2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:50:14 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E31C2972-0E18-D55A-D716-2CA9CF8A6AEC" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="VENTAS_TOTALES" id="85B4485A-3E72-76F3-14A2-6F860467637D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:57:11 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INGRESOS_TOTALES" id="006C2BC3-41B7-9141-AD8C-598A5D979A9F">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:57:11 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84B9357E-4EA1-3AEF-A4F7-D4296E892E86" name="TBL_ESTADISTICAS_VENTA_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:57:11 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE223A98-8E99-FED3-A435-55C7B98A7D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8052887-F55D-DEBC-DA01-9D3AA0778D95" name="TBL_ESTADISTICAS_VENTA_TBL_VENDEDORES_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:50:09 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC4CC0A0-5206-ABAA-EAA9-6C2C61F2E647"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A686CC05-5235-BA9F-7007-FB5AEDF5893A" name="TBL_ESTADISTICAS_VENTA_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:50:14 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="104B716C-7A91-C3E6-927D-2487B4E68AC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

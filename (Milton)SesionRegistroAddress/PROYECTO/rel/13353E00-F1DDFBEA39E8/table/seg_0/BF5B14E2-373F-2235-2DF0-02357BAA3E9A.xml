@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF5B14E2-373F-2235-2DF0-02357BAA3E9A" name="TBL_COMENTARIOS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:01:41 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COMENTARIO_ID" id="2A1BB8AE-B438-BB49-E5E0-DD51FFCAF137">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:39:06 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID" id="B582291A-FBE7-DDE7-16B6-CF35F2E1C9C2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:24:10 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C840F2CC-CB2B-E6DB-60FB-57BD5A8528D6" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="USUARIO_ID" id="A42DD866-1BF3-D005-B5CB-58A975F0EA81">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:24:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8551CFF9-5672-196C-1525-EAE03AF01460" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="TEXTO_COMENTARIO" id="2E4396F1-1726-90D3-9526-914DBC1A9DC9">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:39:06 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALIFICACION" id="BC39951D-7244-FEA6-2DDE-74636CCE9FAB">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:39:06 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_COMENTARIO" id="265294B7-B0E3-7E60-3090-45338D8CAEE1">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:39:06 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB6F47DF-7790-1111-ECB6-F8DD5A075638" name="TBL_COMENTARIOS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:39:10 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A1BB8AE-B438-BB49-E5E0-DD51FFCAF137"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83663527-A684-34C8-38AC-50D0A5EA524D" name="TBL_COMENTARIOS_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:24:10 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B582291A-FBE7-DDE7-16B6-CF35F2E1C9C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40CEEA83-2A39-7328-6CC4-31A8F68A69D7" name="TBL_COMENTARIOS_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:24:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A42DD866-1BF3-D005-B5CB-58A975F0EA81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

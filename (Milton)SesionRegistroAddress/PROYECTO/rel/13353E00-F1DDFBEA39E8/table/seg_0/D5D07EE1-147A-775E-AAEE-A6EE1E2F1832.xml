@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5D07EE1-147A-775E-AAEE-A6EE1E2F1832" name="TBL_NOTIFICACIONES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:17:30 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOTIFICACIONES_ID" id="D0182FBE-7A93-62AB-EDE3-D6BC5985BAA4">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="49439FE6-CB63-12E2-AC92-7B987D806C2D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:08:25 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E27A95F-EFB1-0DEB-AC84-33765ADDB7A2" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="TIPO_NOTIFICACIONES" id="F74CD605-3FFF-3D9E-CDEF-CECD46BD71C7">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MENSAJE" id="51139053-0836-4E0D-E97F-F5E0B348220E">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NOTIFICACION" id="DF75EF8D-2C59-D4E4-0689-94DC37F276DD">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_NOTIFICACION" id="6EF120D3-356A-AF03-F928-7C6C8657E37F">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23ACFD71-EF46-EA92-1713-FA5805253450" name="TBL_NOTIFICACIONES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:03:54 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0182FBE-7A93-62AB-EDE3-D6BC5985BAA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5B60183-EC1F-8FB2-6397-58A43FD4D8BB" name="TBL_NOTIFICACIONES_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:08:25 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49439FE6-CB63-12E2-AC92-7B987D806C2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

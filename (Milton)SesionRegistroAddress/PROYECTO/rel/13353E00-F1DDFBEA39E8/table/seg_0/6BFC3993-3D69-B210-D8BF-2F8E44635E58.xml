@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BFC3993-3D69-B210-D8BF-2F8E44635E58" name="TBL_HISTORIAL_PRECIOS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:01:26 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HISTORIAL_PRECIOS_ID" id="78A5195A-3FE2-CA7A-543F-FF78166B2C47">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:30:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID" id="40DF1408-4AB1-6C41-1679-3B017D18EBAA">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:21:37 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A183AD59-00F7-B5A6-E496-08432B3754B9" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+<Column name="FECHA_CAMBIO" id="4BCCC3EF-F82D-C01A-525A-0BB391113CFF">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:30:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ANTERIOR" id="B6603C1F-5A07-FF50-E721-9CA9BDBE3535">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:30:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NUEVO" id="E8D8BBBF-5765-9D81-E6AE-CAFF24AE44E2">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:30:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48332012-52B5-CA19-6CC8-BEB2421DDF34" name="TBL_HISTORIAL_PRECIOS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:30:33 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78A5195A-3FE2-CA7A-543F-FF78166B2C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD2FCB24-DF7F-E8E3-3451-8E7D0224474F" name="TBL_HISTORIAL_PRECIOS_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:21:37 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40DF1408-4AB1-6C41-1679-3B017D18EBAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

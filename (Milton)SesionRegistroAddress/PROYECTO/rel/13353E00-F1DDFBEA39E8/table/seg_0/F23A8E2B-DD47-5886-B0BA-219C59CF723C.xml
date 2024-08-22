@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F23A8E2B-DD47-5886-B0BA-219C59CF723C" name="TBL_CATEGORIAS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:00:59 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CATEGORIA_ID" id="0EC3E4E3-1AD9-7D07-130E-90299FDEF702">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:28:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CATEGORIA" id="4A4AAB8E-31F2-F67B-739E-9BAF8A1A1F4D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:28:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="9C65D98E-5F13-D03C-CF6B-99C3230B3DCF">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:28:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A01C52A9-3E43-8DA4-B677-E38C832ED804" name="TBL_CATEGORIAS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:28:52 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EC3E4E3-1AD9-7D07-130E-90299FDEF702"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

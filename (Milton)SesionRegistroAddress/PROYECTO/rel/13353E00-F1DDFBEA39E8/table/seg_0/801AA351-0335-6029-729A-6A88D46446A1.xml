@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="801AA351-0335-6029-729A-6A88D46446A1" name="TBL_REPORTES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:16:32 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REPORTE_ID" id="0BC0CB9E-FE81-9082-F418-C8AA8651A863">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:59:50 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="D5C47024-6717-B913-6A6A-AC3916EC0F78">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:53:33 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24FD335A-C70D-FCAB-6F06-9B3B551FB59D" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="TEXTO_REPORTE" id="D220807F-0DE8-F18E-949E-13CBA5403953">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:59:50 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_REPORTE" id="CDFF0A2E-C72C-B133-FDEB-4B2CF13DF077">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:59:50 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_REPORTE" id="86F29BC9-520A-FEAB-E2BE-C3C76737547D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:59:50 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3B23F0B-7882-59DE-2E2C-BEB0E5BA25D5" name="TBL_REPORTES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:59:56 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BC0CB9E-FE81-9082-F418-C8AA8651A863"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B007E7C9-2E17-96CA-F06A-2229A35CAD6C" name="TBL_REPORTES_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:53:33 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5C47024-6717-B913-6A6A-AC3916EC0F78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

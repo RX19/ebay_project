@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EA89C40-47D4-C255-71C0-AA5314A8FFB4" name="TBL_OFERTAS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:02:50 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OFERTAS_ID" id="B9EB93BE-2385-0E4F-7879-55DAD33F585A">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:37:29 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBASTA_ID" id="2FCCA861-8FE3-E89A-8F44-70240DED3F6B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:22:53 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8848141E-CAD2-C352-EAFC-D0E2A2E35BFF" referredColumn="72A53A38-D7EC-9600-2E19-E6D728F999FA"/>
+</associations>
+</Column>
+<Column name="CANTIDAD_OFERTAS" id="0249DEEB-5D33-AEE6-C85F-DD4AABE4E2B5">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:37:29 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_OFERTA" id="00680800-76B8-DB6A-0367-803E4DB58320">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:37:29 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B48F5C78-E8F3-73FC-8C7B-BD1333A3B75B" name="TBL_OFERTAS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:37:29 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9EB93BE-2385-0E4F-7879-55DAD33F585A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1891C7A-7E8C-088D-7149-9412622122D8" name="TBL_OFERTAS_TBL_SUBASTAS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:22:53 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FCCA861-8FE3-E89A-8F44-70240DED3F6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55025817-9925-81A0-2527-74A0151BCD2C" name="TBL_CATEGORIAS_PERSONALIZADAS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:19:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CATEGORIA_PERSONALIZADA_ID" id="A0FE5F7E-D714-C30F-B4EB-402D06D2323B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:09:08 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="5DA7726F-7F42-394B-D67B-2DCC614A820E">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:16:02 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C452D6F-3B64-86BF-53B8-D9ED14399FFF" referredColumn="7C05D752-A451-6084-5F59-6686BDA0D0AF"/>
+</associations>
+</Column>
+<Column name="NOMBRE_CATEGORIA" id="50DCF1B3-09F7-6BF9-FCCC-17377800232B">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:09:08 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="33547B8F-3BC4-28FA-2647-7BA93917AD3A">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:09:08 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D53346E-4A31-C5DD-909E-94DCB1FA670D" name="TBL_CATEGORIAS_PERSONALIZADAS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:09:08 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0FE5F7E-D714-C30F-B4EB-402D06D2323B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59C77ECB-725D-F319-5CB4-1B03BAB34049" name="TBL_CATEGORIAS_PERSONALIZADAS_TBL_USUARIOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:16:02 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DA7726F-7F42-394B-D67B-2DCC614A820E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

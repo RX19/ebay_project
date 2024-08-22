@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA089EB5-0C67-5995-8738-A13A1B37C313" name="TBL_DEVOLUCIONES">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:11:30 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEVOLUCION_ID" id="D3AE23C3-4884-DA2C-B0AF-BD984FC8803D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:50:00 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PEDIDO_ID" id="6CB90360-5792-FBC6-9E4A-99B0CF0F57A4">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:36:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9488CA4D-CDD5-DAB2-94D2-C2740A7CCF8E" referredColumn="D88AFDEE-23C2-C33E-C326-D10552EB9E2D"/>
+</associations>
+</Column>
+<Column name="FECHA_DEVOLUCION" id="4441CFA9-7C3E-0235-8121-48CCC6705D86">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:50:00 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOTIVO" id="872FCB80-D96A-AF6A-950B-6A830234CC5D">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:50:00 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_DEVOLUCION" id="0CB99FB4-A0C8-7DD9-8D0F-C5D64976B805">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:50:00 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D7227C2-B091-5DE2-0A62-9F2D9065E76E" name="TBL_DEVOLUCIONES_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:50:00 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3AE23C3-4884-DA2C-B0AF-BD984FC8803D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71FE799F-4F79-79B2-22E0-7729B63E3E46" name="TBL_DEVOLUCIONES_TBL_PEDIDOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:36:23 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CB90360-5792-FBC6-9E4A-99B0CF0F57A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8DC2EB0-32CD-2D35-6E47-012216EA64B5" name="TBL_ANUNCIOS">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 14:13:05 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANUNCIO_ID" id="4549E06F-1A59-449F-9054-BC2B0A547B83">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUBLICIDAD_ID" id="270F0BDB-FCCF-13D9-C3A4-1AD92B41A14C">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCUTO_ID" id="CBDFC72C-F5C1-1A13-8A81-A68DF40CAA94">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO_ANUNCIO" id="42C8C4C4-7528-031C-2AC3-54410E07652E">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_ANUNCIO" id="9D09227C-61FA-36B2-A2F9-3FD8332ACF7F">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL_DESTINO" id="400F6530-A9A1-3502-C7C5-35CEFB7ED53A">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_PUBLICIDAD_PUBLICIDAD_ID" id="A0C2A30E-A424-31F6-2510-EC5795A427BC">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:22:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3203169E-5334-F954-1F73-863267CC1E7B" referredColumn="7298A596-2DD9-4DED-8EF3-5424015B4015"/>
+</associations>
+</Column>
+<Column name="TBL_PRODUCTOS_PRODUCTO_ID" id="4DF5EDBB-7F5D-0100-6DB1-0EA9200D5055">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:23:01 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2EC4E00-8015-FC85-4EF4-545505E886F2" referredColumn="0264983C-3E68-E4B5-9DF8-4514741FB4E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5525F415-EB79-F6E9-E20E-54B238EDD595" name="TBL_ANUNCIOS_PK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 15:12:04 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4549E06F-1A59-449F-9054-BC2B0A547B83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52E262B4-6232-50DF-2A1E-CF2C9A1031C1" name="TBL_ANUNCIOS_TBL_PUBLICIDAD_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:22:55 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0C2A30E-A424-31F6-2510-EC5795A427BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FADA7E1A-EDF9-CE61-DAB0-C8686037CFB4" name="TBL_ANUNCIOS_TBL_PRODUCTOS_FK">
+<createdBy>mmara</createdBy>
+<createdTime>2024-07-06 16:23:01 UTC</createdTime>
+<ownerDesignName>PROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DF5EDBB-7F5D-0100-6DB1-0EA9200D5055"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
