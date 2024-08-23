@@ -2,7 +2,6 @@ const mensajeError = document.getElementsByName("error")[0]
 
 document.getElementById("login-form").addEventListener("submit",async(e)=>{
     e.preventDefault();
-    const nombre = e.target.children.nombre.value;
     const email = e.target.children.email.value;
     const password = e.target.children.password.value;
     const re = await fetch("http://localhost:3005/api/login",{
