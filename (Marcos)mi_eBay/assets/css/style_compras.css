@@ -1,0 +1,39 @@
+.container, .div-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px;
+    height: 130px;
+    box-shadow: 0px 2px teal;
+}
+
+.img_producto{
+    width: 100px;
+    height: 125px;
+}
+
+.acciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.acciones button{
+    min-width: 200px;
+    padding: 5px 0px;
+    border-radius: 15px;
+}
+
+.content div{
+    padding: 5px;
+}
