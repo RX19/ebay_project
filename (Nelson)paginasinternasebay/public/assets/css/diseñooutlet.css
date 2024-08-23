@@ -267,3 +267,9 @@ button:focus {
         flex-basis: 100%; 
     }
 }
+#titulo-principal {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff; 
+}

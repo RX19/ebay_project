@@ -1,4 +1,4 @@
-const oracledb = require('oracledb');
+import oracledb from 'oracledb';
 
 // Configuración de la base de datos
 const dbConfig = {
@@ -18,4 +18,4 @@ async function openConnection() {
   }
 }
 
-module.exports = openConnection;
+export default openConnection;

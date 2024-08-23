@@ -1,5 +1,4 @@
-//const openConnection = require('./dbconfig');
-const openConnection = require('../config/dbconfig');
+import openConnection from '../config/dbconfig.js';
 
 async function testConnection() {
   let connection;
@@ -21,3 +20,4 @@ async function testConnection() {
 }
 
 testConnection();
+

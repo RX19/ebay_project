@@ -263,3 +263,210 @@ body {
 .menu-items li:last-child {
     position: relative;
 }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#productos-container {
+    width: 80%;
+    margin: auto;
+    flex: 1; 
+}
+
+.targeta-producto {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; 
+}
+
+.targeta-producto img {
+    height: 120px;
+    width: auto;
+    aspect-ratio: 1.5;
+    border-radius: 5px;
+}
+
+.targeta-producto h3 {
+    width: 150px;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.targeta-producto p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.targeta-producto .cantidad-control {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+}
+
+.targeta-producto .cantidad-control input {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.targeta-producto .cantidad-control button {
+    padding: 5px 10px;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.targeta-producto .cantidad-control button:hover {
+    background-color: #005bb5;
+}
+
+
+footer {
+    background-color: #161515;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; 
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+#totales{
+    text-align: center;
+}
+
+
+#totales button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#totales button:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+#totales button:active {
+    background-color: #003f7d;
+    transform: translateY(0);
+}
+
+#totales button:first-of-type {
+    background-color: #28a745;
+}
+
+#totales button:first-of-type:hover {
+    background-color: #218838;
+}
+
+#totales button:first-of-type:active {
+    background-color: #1e7e34;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    #productos-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .targeta-producto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .targeta-producto img {
+        height: auto;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .targeta-producto h3, .targeta-producto p {
+        width: 100%;
+    }
+
+    .targeta-producto .cantidad-control {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .targeta-producto .cantidad-control input {
+        width: 60px;
+    }
+
+    .targeta-producto .cantidad-control button {
+        flex: 1;
+        margin: 0 5px;
+    }
+}
+#carrito-vacio {
+    text-align: center
+}
+
+
+
+
+.cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones y el span */
+}
+
+#hola button {
+    padding: 10px 15px;
+    background-color: #003f7d; /* Azul oscuro */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hola button:hover {
+    background-color: #002f5d; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Sutil efecto de elevación */
+}
+
+#hola button:active {
+    background-color: #001f3d; /* Aún más oscuro cuando se presiona */
+    transform: translateY(0); /* Restablece el efecto de elevación */
+}
+
+.cantidad-control span.cantidad {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    min-width: 30px;
+    text-align: center;
+}
+
+#escondido {
+    display: none;
+}
