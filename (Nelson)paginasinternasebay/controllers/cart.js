@@ -4,7 +4,7 @@ function crearTargetaProductosInicio() {
     contenedorTargetas.innerHTML = "";
     const productos = JSON.parse(localStorage.getItem('cosas'));
     
-    if (productos && productos.length > 0){
+    if (productos && productos.length > 0) {
         productos.forEach(producto => {
             const nuevacosa = document.createElement("div");
             nuevacosa.classList = "targeta-producto";
@@ -44,9 +44,15 @@ function crearTargetaProductosInicio() {
                     actualizarTotales();
                 });
         });
+        
     } else {
         actualizarTotales();
     }
 }
 
 crearTargetaProductosInicio();
+
+// Aquí agregas el código para redirigir al checkout al hacer clic en "Comprar"
+document.getElementById('boton-comprar').addEventListener('click', () => {
+    window.location.href = "/(Nelson)paginasinternasebay/public/checkout.html";
+});

@@ -377,15 +377,15 @@ footer {
 }
 
 #totales button:first-of-type {
-    background-color: #28a745;
+    background-color: #0d309b;
 }
 
 #totales button:first-of-type:hover {
-    background-color: #218838;
+    background-color: #093794;
 }
 
 #totales button:first-of-type:active {
-    background-color: #1e7e34;
+    background-color: #226ce4;
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -440,10 +440,10 @@ footer {
 
 #hola button {
     padding: 10px 15px;
-    background-color: #003f7d; /* Azul oscuro */
+    background-color: #152b5c; /* Azul oscuro */
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -455,8 +455,8 @@ footer {
 }
 
 #hola button:active {
-    background-color: #001f3d; /* Aún más oscuro cuando se presiona */
-    transform: translateY(0); /* Restablece el efecto de elevación */
+    background-color: #1e6dc7; 
+    transform: translateY(0); 
 }
 
 .cantidad-control span.cantidad {

@@ -64,7 +64,6 @@ header input[type="text"]::placeholder {
     text-decoration: none;
 }
 
-
 .seccion-ayuda {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,15 +117,9 @@ header input[type="text"]::placeholder {
     margin-bottom: 5px;
 }
 
-.seccion-ayuda a, .explorar-articulos a, .seccion-contacto a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
 .seccion-ayuda a:hover, .explorar-articulos a:hover, .seccion-contacto a:hover {
     text-decoration: underline;
 }
-
 
 .seccion-contacto {
     text-align: center;
@@ -158,4 +151,67 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: transparent;
+    padding: 10px 20px;
+    list-style: none;
+    border-bottom: 1px solid #333; 
+}
+
+.navegacion li {
+    margin-right: 20px; 
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+#logo, 
+.navegacion img {
+    height: 40px; 
+    background-color: transparent; 
+    opacity: 0.8; 
+}
+
+#logo:hover, 
+.navegacion img:hover {
+    opacity: 1; 
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-items li {
+    margin-left: 20px; 
+}
+
+#cuenta-carrito {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #ff0000; 
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    line-height: 1;
+}
+
+.menu-items li:last-child {
+    position: relative;
 }

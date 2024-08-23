@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="assets/css/diseñocarrito.css">
-    <script src="/(Nelson)paginasinternasebay/controllers/cartservice.js" defer></script>
-    <script src="/(Nelson)paginasinternasebay/controllers/cart.js" defer></script>
-   
+    <title>Pago</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <script src="/(Nelson)paginasinternasebay/controllers/checkout.js" defer></script>
 </head>
 <body>
     <nav>
@@ -25,19 +23,15 @@
             </div>
         </ul>
     </nav>
-</header>
+    
     <main>
-        <p id="carrito-vacio" style="display: none;">No hay productos en el carrito. <a href="/(Nelson)paginasinternasebay/public/outlet.html">Agrega algunos</a></p>
-        <section id="productos-container"></section> 
-        <section id="totales" style="display: none;">
-            <p>Total unidades: <span id="unidades">0</span></p>
-            <p>Total precio: <span id="precio">0</span></p>
-            <button id="boton-comprar">Comprar</button>
-        </section>
+        <h1>Resumen de Compra</h1>
+        <section id="resumen-carrito"></section>
+        <button id="proceder-pago">Proceder con el Pago</button>
     </main>
-    </div>
     <footer>
         <p>© eBayProyectoUNAH.</p>
-    </footer> 
+    </footer>
+    <script src="assets/js/checkout.js" defer></script>
 </body>
 </html>
