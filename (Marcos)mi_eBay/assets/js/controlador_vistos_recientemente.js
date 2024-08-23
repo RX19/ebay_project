@@ -1,6 +1,5 @@
 function descuentoArticulo(precio, porcentajeDescuento){
     var descuento = precio * (porcentajeDescuento/100);
-    console.log(descuento);
     return descuento;          
 }
 
@@ -55,6 +54,6 @@ function generarArticulos(){
             </div>
         </div>`;
     });
+    
 }
 generarArticulos();
-
