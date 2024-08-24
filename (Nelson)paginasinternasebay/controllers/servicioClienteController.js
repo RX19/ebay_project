@@ -6,5 +6,5 @@ function actualizarCantidadCarrito() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    actualizarCantidadCarrito();
+    actualizarNumeroCarrito();
 });

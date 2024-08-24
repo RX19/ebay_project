@@ -39,7 +39,7 @@ function crearTargetaProductosInicio() {
                     const cuentaElement = e.target.parentElement.getElementsByClassName("cantidad")[0];
                     cuentaElement.innerText = nuevaCantidad;
                     if (nuevaCantidad === 0) {
-                        crearTargetaProductosInicio(); // Refresca las tarjetas si la cantidad llega a 0
+                        crearTargetaProductosInicio(); 
                     }
                     actualizarTotales();
                 });
