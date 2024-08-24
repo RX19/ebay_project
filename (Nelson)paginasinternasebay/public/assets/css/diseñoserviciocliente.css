@@ -1,156 +1,60 @@
 body {
-    background-color: #1c1c1c;
-    color: #e6e6e6;
     font-family: Arial, sans-serif;
+    background-color: #181818; 
+    color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 header {
     text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-header input[type="text"] {
-    padding: 10px;
-    width: 80%;
-    max-width: 600px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #e6e6e6;
-}
-
-header input[type="text"]::placeholder {
-    color: #999;
-}
-
-.pedidos-recientes {
-    margin: 20px 0;
-}
-
-.pedidos-recientes h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.pedidos-recientes .pedidos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow-x: auto;
-    padding: 10px 0;
-}
-
-.pedidos-recientes .pedidos img {
-    max-width: 100px;
-    margin: 0 10px;
-    border-radius: 5px;
-}
-
-.pedidos-recientes .pedidos a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.seccion-ayuda {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.seccion-ayuda div {
-    background-color: #333;
     padding: 20px;
-    border-radius: 5px;
-    position: relative;
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.seccion-ayuda h3 {
-    margin: 0 0 10px;
-}
 
-.seccion-ayuda a {
-    color: #1e90ff;
-    text-decoration: none;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 1.2em;
-}
-
-.explorar-articulos {
-    margin-bottom: 20px;
-}
-
-.explorar-articulos h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.explorar-articulos div div {
-    flex: 1 1 calc(33% - 20px);
-    background-color: #333;
+main {
     padding: 20px;
-    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+    flex: 1; 
+}
+
+h1, h2 {
     text-align: center;
 }
 
-.seccion-ayuda, .explorar-articulos, .seccion-contacto {
-    margin-bottom: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.seccion-ayuda h3, .explorar-articulos h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.seccion-ayuda a:hover, .explorar-articulos a:hover, .seccion-contacto a:hover {
-    text-decoration: underline;
-}
-
-.seccion-contacto {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.seccion-contacto h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.seccion-contacto a {
+ul li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1.1rem;
     display: block;
-    color: #1e90ff;
-    text-decoration: none;
-    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.seccion-contacto div a {
-    display: inline-block;
-    margin: 0 10px;
-}
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #161515;
-    color: #fff;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
     bottom: 0;
-    width: 100%;
 }
 
 .navegacion {
@@ -180,14 +84,9 @@ footer {
 #logo, 
 .navegacion img {
     height: 40px; 
-    background-color: transparent; 
-    opacity: 0.8; 
+    background-color: #111; 
 }
 
-#logo:hover, 
-.navegacion img:hover {
-    opacity: 1; 
-}
 
 .menu-items {
     display: flex;
@@ -212,6 +111,77 @@ footer {
     line-height: 1;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; 
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
 .menu-items li:last-child {
     position: relative;
 }
+
+
+a.contact-link {
+    color: #ff5733; 
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.contact-link:hover {
+    background-color: #ff5733;
+    color: #fff; 
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #142bd6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+

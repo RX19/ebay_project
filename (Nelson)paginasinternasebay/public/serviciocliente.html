@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio al Cliente</title>
+    <title>Servicio al Cliente - eBay</title>
     <link rel="stylesheet" href="assets/css/diseñoserviciocliente.css">
+    <script src="/(Nelson)paginasinternasebay/controllers/servicioClienteController.js" defer></script>
 </head>
 <body>
     <nav>
@@ -12,7 +13,7 @@
             <li><a href="/(Nelson)paginasinternasebay/public/outlet.html"><img src="/(Nelson)paginasinternasebay/public/images/ebaylogos.png" id="logo"></a></li>
             <div class="menu-items">
                 <li><a href="/(Nelson)paginasinternasebay/public/promosdiarias.html">Promociones Diarias</a></li>
-                <li><a href="/(Nelson)paginasinternasebay/public/serviciocliente.html">Servicion al Cliente</a></li>
+                <li><a href="/(Nelson)paginasinternasebay/public/serviciocliente.html">Servicio al Cliente</a></li>
                 <li>
                     <a href="/(Nelson)paginasinternasebay/public/carrito.html">
                         <img src="/(Nelson)paginasinternasebay/public/images/carrito.png" alt="carrito de compras">
@@ -22,90 +23,72 @@
             </div>
         </ul>
     </nav>
-    <div class="contenedor">
-        <header>
-            <h1>¿Cómo podemos ayudarte hoy?</h1>
-            <label for="busqueda-input" class="visualmente-oculto">Buscar en la Ayuda de eBay</label>
-            <input type="text" id="busqueda-input" placeholder="Buscar en la Ayuda de eBay...">
-        </header>
 
-        <section class="pedidos-recientes">
-            <h2>¿Necesitas ayuda con tus pedidos recientes?</h2>
-            <div class="pedidos">
-                <img src="recent1.png" alt="Imagen del Pedido Reciente 1">
-                <img src="recent2.png" alt="Imagen del Pedido Reciente 2">
-                <img src="recent3.png" alt="Imagen del Pedido Reciente 3">
-                <img src="recent4.png" alt="Imagen del Pedido Reciente 4">
-                <img src="recent5.png" alt="Imagen del Pedido Reciente 5">
-                <a href="#">Ver todos</a>
-            </div>
-        </section>
+    <header>
+        <h1>Servicio al Cliente - eBay</h1>
+    </header>
 
-        <section class="seccion-ayuda">
-            <div>
-                <h3>Artículo que no ha llegado</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Devolver un artículo para obtener un reembolso</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Rastrear tu artículo</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Retirar una oferta</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Pagar por artículos</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Envío y entrega para compradores</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-        </section>
+    <main>
+        <h2>Encuentra una solución</h2>
+        <ul>
+            <li><a href="/(Nelson)paginasinternasebay/public/personal.html">Gestiona tu cuenta</a></li>
+            <li><a href="/(Nelson)paginasinternasebay/public/outlet.html">Compra y vende en eBay</a></li>
+            <li><a href="/(Nelson)paginasinternasebay/public/checkout.html">Pagos y facturación</a></li>
+            <li><a href="#">Envíos y devoluciones</a></li>
+            <li><a href="#">Seguridad y protección</a></li>
+        </ul>
 
-        <section class="explorar-articulos">
-            <h2>Explorar Artículos de Ayuda</h2>
-            <div>
-                <h3>Compra</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Venta</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Cuenta</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Devoluciones y reembolsos</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Envío y rastreo</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-            <div>
-                <h3>Tarifas y facturación</h3>
-                <a href="#">Artículo popular</a>
-            </div>
-        </section>
+        <h2>Temas populares</h2>
+        <ul>
+            <li><a href="#">Cómo recuperar tu cuenta de eBay</a></li>
+            <li><a href="#">Solucionar problemas de pago</a></li>
+            <li><a href="#">Cómo dejar una valoración a un vendedor</a></li>
+            <li><a href="#">Qué hacer si no recibes tu artículo</a></li>
+            <li><a href="#">Guía para gestionar devoluciones</a></li>
+        </ul>
 
-        <section class="seccion-contacto">
-            <h2>¿Necesitas más ayuda?</h2>
-            <a href="#">Contáctanos</a>
-            <div>
-                <a href="#">Preguntar a la Comunidad</a> |
-                <a href="#">Iniciar una devolución</a> |
-                <a href="#">Informar sobre un artículo que no ha llegado</a>
-            </div>
-        </section>
+        <h2>Contáctanos</h2>
+ 
+<p>¿No encontraste lo que buscabas? <a href="#" class="contact-link" onclick="openModal()">Contáctanos</a> para recibir más ayuda.</p>
+
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img src="/img/contacto.png" alt="Información de Contacto de la Empresa">
     </div>
+</div>
+
+<script>
+    function actualizarCantidadCarrito() {
+    let cantidadCarrito = localStorage.getItem('carritoCantidad') || 0;
+    console.log(localStorage.getItem('carritoCantidad'));
+    console.log("Cantidad en el carrito:", cantidadCarrito); 
+    document.getElementById('cuenta-carrito').textContent = cantidadCarrito;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    actualizarCantidadCarrito();
+});
+    function openModal() {
+        document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+
+
+    window.onclick = function(event) {
+        var modal = document.getElementById("contactModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+    </main>
+
     <footer>
         <p>© eBayProyectoUNAH.</p>
     </footer> 
