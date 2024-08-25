@@ -335,4 +335,354 @@ margin:10px;
         text-decoration: none;
     }
 
-    
+    /* Add CSS for review */
+    #reviewContainer {
+    width: 98%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#picDiv {
+
+    width: 6%;
+    height: 100%;
+}
+
+#picDiv>div {
+    border: 1px solid rgb(209, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#sImg {
+    width: 40px;
+    height: 60px;
+}
+
+#bigPicDiv {
+    width: 35%;
+    border: 1px solid rgb(185, 185, 185);
+    height: 100%;
+    position: relative;
+    margin-right: 5px;
+
+}
+
+#detailDiv {
+    width: 37%;
+    height: 100%;
+}
+
+#shopConDiv {
+    width: 20%;
+    height: 100%;
+}
+
+#bigI {
+    width: 80%;
+    height: 90%;
+}
+
+#appDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#leftAr {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    padding: 7% 2.5%;
+    border: 1px solid #808080;
+
+}
+
+#rightAr {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    padding: 7% 2.5%;
+    border: 1px solid #808080;
+}
+
+#addTitle {
+    margin: 0% 0% 2% 0%;
+    border-bottom: 1px solid #e0dddd;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#condition {
+    margin: 2% 0% 2% 0%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 17px;
+}
+
+#buyit {
+    padding: 13px 80px;
+    border-radius: 30px;
+    margin: 5px 0px 5px 0px;
+    background-color: #2B0EAF;
+    color: white;
+    border: none;
+
+}
+
+#buyit:hover {
+    background-color: #2B0EAF;
+    color: white;
+    border: none;
+}
+
+#acart {
+    padding: 13px 80px;
+    border-radius: 30px;
+    margin: 5px 0px 5px 0px;
+    background-color: #1db7ff;
+    color: white;
+    border: none;
+}
+
+#acart:hover {
+    background-color: #2B0EAF;
+    color: white;
+    border: none;
+}
+
+#p {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#priceDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #cfcece;
+    border-bottom: 1px solid #d4d4d4;
+    height: 120px;
+
+}
+
+#makeOfferDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+    width: 100%;
+    height: 120px;
+}
+
+
+#makeOf {
+    padding: 13px 80px;
+    border-radius: 30px;
+    margin: 5px 0px 5px 0px;
+    background-color: #2B0EAF;
+    color: white;
+    border: none;
+    /* margin-left: 110px; */
+    margin-right: 20px;
+}
+
+#adToWatch {
+    padding: 11px 65px;
+    border-radius: 30px;
+    margin: 5px 0px 5px 0px;
+    color: black;
+    background: none;
+    border: 1px solid #808080;
+    /* margin-left: 130px; */
+    margin-right: 20px;
+    position: relative;
+}
+
+#B {
+    margin-left: 20px;
+}
+
+#of {
+    margin-left: 20px;
+}
+
+#loveImg {
+    position: absolute;
+    margin-top: -31px;
+    margin-left: 42px;
+    width: 15px;
+    height: 15px;
+}
+
+#shipping {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 15px 0px 15px;
+    margin-top: 10px;
+
+}
+
+#return {
+    display: flex;
+    margin: 0px 15px 0px 15px;
+    margin-top: 10px;
+
+}
+
+#deliver {
+    display: flex;
+    margin: 0px 15px 0px 15px;
+    margin-top: 10px;
+}
+
+.At {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    font-size: 15px;
+
+}
+
+.Af {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.As {
+    font-size: 13px;
+}
+
+.Ar {
+
+    font-size: 14px;
+}
+
+#payA {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#Cntpay {
+    display: flex;
+}
+
+.imgpay {
+    width: 10%;
+    border: 1px solid rgb(163, 162, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgpay img {
+    width: 80%;
+}
+
+.Ap {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#Si {
+    display: flex;
+}
+
+#spA {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#shopC {
+    border: 1px solid rgb(204, 200, 200);
+    padding: 10px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+#sellerInfo {
+    border: 1px solid rgb(204, 200, 200);
+    margin-top: 10px;
+    font-family: sans-serif;
+    padding: 20px 0px 20px 5px;
+    border-radius: 10px;
+}
+
+#sellerInfo p {
+    font-size: 15px;
+
+}
+
+#cLove {
+    width: 18px;
+    height: 18px;
+}
+
+#similarItem {
+    margin-top: 90px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+}
+
+#smA {
+    margin-bottom: -75px;
+    border-top: 1px solid #e2dede;
+    padding-top: 10px;
+    margin-top: 90px;
+    margin-left: 10px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#similarItem>div {
+    margin-left: 14px;
+    border: 1px solid rgb(228, 225, 225);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#similarItem>div>div img {
+    border-radius: 20px;
+
+}
+
+#similarItem>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#similarItem>div>div p:nth-child(1) {
+    margin-top: 60px;
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+#similarItem>div>div p:nth-child(2) {
+    margin-left: -20px;
+
+}
