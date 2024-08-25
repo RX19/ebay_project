@@ -1,4 +1,5 @@
 import express from "express";
+import require from "express"
 //Fix para __dirname
 import path from 'path';
 import {fileURLToPath} from 'url';
@@ -15,6 +16,12 @@ console.log("servidor corriendo en puerto",app.get("port"));
 app.use(express.static(__dirname + "/routes"));
 app.use(express.static(__dirname + "/public"));
 app.use(express.json());
+
+//Invocando conexion a BD
+//const connection = require('./tests/testConnection.js');
+
+//Registro
+
 
 
 //Rutas
